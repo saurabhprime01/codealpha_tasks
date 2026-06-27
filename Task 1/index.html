@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Visual Exploration Gallery</h1>
+
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-target="all">All</button>
+            <button class="filter-btn" data-target="nature">Nature</button>
+            <button class="filter-btn" data-target="architecture">Architecture</button>
+            <button class="filter-btn" data-target="animals">Animals</button>
+            <button class="filter-btn" data-target="birds">Birds</button>
+            <button class="filter-btn" data-target="mobiles">Mobiles</button>
+        </div>
+
+        <!-- Gallery Grid Container -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/10/800/600" alt="Forest Trail">
+                <div class="item-overlay"><h3>Forest Trail</h3></div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/id/1011/800/600" alt="Modern Bay Architecture">
+                <div class="item-overlay"><h3>Bay Architecture</h3></div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/id/1025/800/600" alt="Pug in a Blanket">
+                <div class="item-overlay"><h3>Cozy Pug</h3></div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/id/28/800/600" alt="Peaceful Forest">
+                <div class="item-overlay"><h3>Peaceful Forest</h3></div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://picsum.photos/id/1048/800/600" alt="Geometric Building">
+                <div class="item-overlay"><h3>Geometric Building</h3></div>
+            </div>
+            <div class="gallery-item" data-category="birds">
+                <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800" alt="Colorful Bird"">
+                <div class="item-overlay"><h3>Colorful Bird</h3></div>
+            </div>
+            <div class="gallery-item" data-category="birds">
+                <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800" alt="Flying Bird">
+                <div class="item-overlay"><h3>Flying Bird</h3></div>
+            </div>
+            <div class="gallery-item" data-category="mobiles">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800" alt="Smartphone">
+                <div class="item-overlay"><h3>Smartphone</h3></div>
+            </div>
+
+            <div class="gallery-item" data-category="mobiles">
+                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=800" alt="Mobile Device">
+                <div class="item-overlay"><h3>Mobile Device</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal Layer -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
